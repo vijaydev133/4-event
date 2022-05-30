@@ -1,0 +1,244 @@
+.first-page-top {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.75)),
+    url(/img/hero-bg.jpg);
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  color: white;
+  background-attachment: scroll;
+}
+
+.first-page-top nav {
+  padding-top: 10px;
+  display: flex;
+  position: sticky;
+  top: 0;
+  box-sizing: border-box;
+}
+
+.first-page .nav-left img {
+  width: 150px;
+}
+
+.first-page-top .nav-left,
+.first-page-top .nav-right {
+  margin-top: 20px;
+}
+
+.first-page-top .nav-right {
+  line-height: 30px;
+  font-size: 18px;
+  margin-left: 5%;
+}
+
+.first-page-top .nav-right .list {
+  display: none;
+}
+
+.first-page-top .nav-right .btn {
+  background-color: #f82249;
+  margin: 0 15px;
+  padding: 5px 22px;
+  border-radius: 20px;
+  border: 2px solid #f82249;
+  transition: 0.4s;
+  font-family: "Open Sans", sans-serif;
+  font-size: 13px;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.first-page-top .nav-right .btn:hover {
+  color: #fff;
+  background: none;
+  outline: none;
+  border: 2px solid #f82249;
+}
+
+.first-page-centre {
+  text-align: center;
+  margin-top: 180px;
+  box-sizing: border-box;
+}
+
+.first-page-centre h1 {
+  font-size: 34px;
+  margin-bottom: 30px;
+  font-family: "Raleway", sans-serif;
+  line-height: 40px;
+}
+
+.first-page-centre .color {
+  color: #f82249;
+}
+
+.first-page-centre p {
+  font-size: 16px;
+  margin-bottom: 40px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+}
+
+.first-page-centre .play-btn {
+  font-size: 18px;
+
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  background-color: #f82249;
+  border: 4px solid #f82249;
+  outline: rgba(114, 111, 111, 0.25) solid 15px;
+  margin-bottom: 60px;
+}
+.first-page-centre .play-btn:hover {
+  transition: transform 0.4s;
+}
+
+.play-btn i {
+  line-height: 50px;
+  padding: 0 15px;
+}
+
+.first-page-centre .a-t-e {
+  color: #fff;
+  margin: 0 15px;
+  padding: 8px 35px;
+  border-radius: 20px;
+  font-family: "Open Sans", sans-serif;
+  border: 2px solid #f82249;
+}
+
+.first-page-centre .a-t-e:hover {
+  background-color: #f82249;
+  transition: 0.6s;
+}
+
+.first-page-bottom {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.75)),
+    url(/img/about-bg.jpg);
+  width: 100%;
+  background-size: cover;
+  color: white;
+  background-attachment: scroll;
+}
+
+.first-page-bottom .fpb-container {
+  padding: 20px;
+}
+
+.first-page-bottom h2 {
+  font-size: 35px;
+  padding-bottom: 20px;
+  font-family: "Raleway", sans-serif;
+}
+
+.first-page-bottom p {
+  line-height: 20px;
+  padding-bottom: 20px;
+  font-family: "Open Sans", sans-serif;
+}
+
+.first-page-bottom .where h3,
+.first-page-bottom .when h3 {
+  font-size: 20px;
+  font-family: "Raleway", sans-serif;
+  padding-bottom: 13px;
+}
+
+.arr {
+  color: #fff;
+  background-color: #f82249;
+  padding: 15px 18px;
+  border-radius: 100%;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+}
+
+@media (min-width: 375px) {
+  .first-page-top nav {
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    box-sizing: border-box;
+  }
+
+  .first-page-top .nav-left,
+  .first-page-top .nav-right {
+    margin: 0 10px;
+    margin-top: 20px;
+  }
+}
+
+@media (min-width: 575px) {
+  .first-page-bottom .fpb-container {
+    margin: 0 8%;
+    box-sizing: border-box;
+  }
+}
+
+@media (min-width: 765px) {
+  .first-page-bottom .fpb-container {
+    padding: 20px;
+    margin: 0 3%;
+  }
+}
+
+@media (min-width: 990px) {
+  .nav-right i {
+    display: none;
+  }
+
+  .first-page-top .nav-right {
+    display: flex;
+  }
+
+  .first-page-top .nav-right .list {
+    display: contents;
+  }
+
+  .first-page-top .nav-right ul {
+    display: flex;
+  }
+
+  .first-page-top .nav-right ul li {
+    margin-right: 20px;
+    font-family: "Raleway", sans-serif;
+    font-size: 14px;
+    
+  }
+
+  .nav-link{
+    opacity: 0.75;
+  }
+  .nav-link:hover {
+    opacity: 1;
+  }
+
+  .nav-link::before {
+    transition: 300ms;
+    height: 2px;
+    content: "";
+    position: absolute;
+    background-color: red;
+  }
+   .nav-link-ltr::before{
+     width: 0%;
+     bottom: 5px;
+   }
+
+   .nav-link-ltr:hover::before{
+     width: 100%;
+   }
+
+
+  .first-page-centre h1 {
+    font-size: 56px;
+    line-height: 60px;
+  }
+}
